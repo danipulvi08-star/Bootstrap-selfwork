@@ -1,0 +1,226 @@
+
+/* VARIABILI */
+:root {
+    --accento: #f5b400;
+    --sfondo: #111111;
+    --sfondo-card: #1c1c1c;
+}
+
+
+/* STILE GENERALE */
+body {
+    margin: 0;
+    background-color: var(--sfondo);
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* NAVBAR */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--sfondo);
+    z-index: 1000;
+}
+
+.top-bar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    color: var(--accento);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: var(--accento);
+}
+
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: var(--sfondo);
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('media/hero.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 56px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+
+/* TITOLI */
+.section-title {
+    text-align: center;
+    color: var(--accento);
+    margin-bottom: 40px;
+}
+
+
+/* SEZIONE FILM */
+.films {
+    padding: 80px 0;
+    background-color: var(--sfondo);
+}
+
+
+/* CARD FILM */
+.film {
+    background-color: var(--sfondo-card);
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+
+/* LOCANDINE */
+.film img {
+    display: block;
+    width: 100%;
+    height: 475px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+/* TITOLI FILM */
+.film h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+
+/* GENERI */
+.genere {
+    color: var(--accento);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+/* LAVORA CON NOI */
+.lavora {
+    padding: 80px 0;
+    background-color: var(--sfondo);
+}
+
+.lavora label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.lavora input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+.lavora button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: var(--accento);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lavora button:hover {
+    background-color: #ffd34d;
+}
+
+
+/* FOOTER */
+.footer {
+    padding: 50px 0 30px;
+    background-color: var(--sfondo);
+}
+
+.footer-box {
+    margin-bottom: 25px;
+}
+
+.footer h4 {
+    color: var(--accento);
+    font-size: 18px;
+}
+
+.footer a {
+    color: white;
+    font-size: 26px;
+    margin-right: 15px;
+}
+
+.footer a:hover {
+    color: var(--accento);
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 767px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .menu li {
+        margin-left: 12px;
+    }
+
+    .film img {
+        height: 380px;
+    }
+
+}
